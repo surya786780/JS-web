@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head>
+<title>JS DOM</title>
+</head>
+
+    <body>
+        <link rel="stylesheet" href="basic.css"/>
+        <!-- link javascript to html -->
+        <script type="text/javascript" src="basic.js"> </script>
+        <script src="jquery.js"></script> 
+        
+        <script>
+            $(document).ready(function(){
+                // hide and show
+                // $("#btn1").click(function(){
+                //     $("#div1").hide();
+                // });
+                // $("#btn2").click(function(){
+                //     $("#div2").show();
+                // });
+                // $("#btn3").click(function(){
+                //     $("#div1,#div2").toggle();
+                // });
+
+                // animation
+            //     $("#btn3").click(function(){ 
+            //         var x = document.getElementById("uname").value;
+            //         $("#ani").html(x);
+            //         $("#cube").animate({
+            //             left:'150px',
+            //             opacity:'1',
+            //             width:'100px',
+            //             height:'100px'
+            //         },2000)
+            //     });
+            //     $("#btn4").click(function(){
+            //         var x = document.getElementById("uname").value;
+            //         $("#ani").html(x);
+            //         $("#cube").animate({
+            //             left:"0px",
+            //             opacity:'0.1',
+            //             width:'50px',
+            //             height:'50px'
+            //         },2000)
+            //     });
+
+
+            // callback and chaining effects
+            // function printmsg(){
+            //     alert("effort done");
+            // }
+            // $("#btn1").click(function(){
+            //    $("#div1").fadeToggle(3000,function(){  
+            //     // callback is call something the effect is done 
+            //     // so we create anonymous function that call after the first function is finished that work 
+            //         alert("fade finish")
+            //     });
+            // });
+            // $("#btn2").click(function(){
+            //     // $("#div3").slideToggle(3000,printmsg);
+
+            //     // chaining efforts
+            //     $("#div3").slideUp(2000).slideDown(1000).fadeOut(1000).fadeIn(800);
+            //     // left to right action execute
+
+            // });
+          
+            // jquery dom manipulation
+            // text(),html(),attr(),css()
+            // $("#btn1").click(function(){
+
+                //text()
+                // var txt = $("#div1").text(); // get text
+                // var txt2 = "<b>hello</b>"; // set text and shows all the txt and tags also
+                // $("#div1").text(txt2);
+                // alert(txt);
+                // alert($("#div1 #p1").text());
+
+                //html()
+                //alert($("#div1").html()); // shows all the html code that div haved
+                // $("#div1").html("<b>Hi Hello</b> WORLD");  // not show the tags but tags worked
+            
+                //attr()
+                //alert($("#p1").attr("class")); // gives the attribute value class is a attr and thats value is p1class
+                // alert($("#p1").attr("value"));
+
+                // css() access css style of the particular element
+                // alert($("#p1").css("font-size"));
+                // alert($("#p1").css("font-family"));
+                // alert($("#p1").css("color"));
+                // alert($("#div1").css("border"));
+              
+                // ========= set and get value in css =================
+                // attr() using this change value
+                // $("#p1").attr("class","surya"); // change attr value
+                // alert($("#p1").attr("class"));
+                
+                // css using change style
+                // $("#div1").css("font-size","25px"); // change css style
+                // $("#div1").css("background-color","yellow");
+                // $("#div1").css("color","black");
+        
+            // });
+            // jquery dom manipulation
+            // text(),html(),attr(),css()
+            // css using change style
+            // $("#btn2").click(function(){
+            //     $("#div1").css("font-size","25px"); // change css style
+            //     $("#div1").css("background-color","brown");
+            //     $("#div1").text("mugesh");
+            //     $("#div1").css("padding","50px");
+            // });
+
+            /*
+                append() - Inserts content at the end of the selected elements
+                prepends() - Inserts content at the beginning of the selected ele
+                after() - Inserts content after the selected elements
+                before() - Inserts content before the selected elements    
+            */
+                // append method
+                $("#btn1").click(function(){
+                    $("#div1").append("1st div and paragraph 3");
+                });
+                $("#btn2").click(function(){
+                    $("#div1").after();
+                });
+                $("#btn3").click(function(){
+                    $("#div1").prepend("1st div prepend"); 
+                });
+                $("#btn4").click(function(){
+                    $("#div1").before();
+                });
+                $("#btn5").click(function(){
+                    $("#div1").remove();
+                });
+                // $("#btn6").click(function(){
+                //     $("#div1").empty();
+                // });
+
+                function fn1(){
+                     var x = document.getElementById("div1");
+                     x.removeChild();
+                }
+               
+
+
+        });
+        </script>
+        
+<!-- jquery file link -->
+        <!-- <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script> --> 
+   <!-- using jquery via online using this link -->
+        
+    
+   <!-- document.write use in button -->
+    <!-- <button type="button" onclick="document.write(43+1)" name="button">okk</button> -->
+    <!-- print the page use below command -->
+    <!-- <button onclick="window.print()" name="button">print this page</button> -->
+
+
+    <!-- regular expressions are used to perform powerful pattern-matching and search and replace function on text -->
+    <!-- <form onclick="regexp()" action="home.html" > -->
+        <!-- <input id="uname" placeholder="user name" type="text"/><br>
+        <label id="lab1" style="color: brown;visibility: hidden;">Invalid username</label><br>
+        <button onclick="regexp()" type="button">Submit</button> -->
+    <!-- </form> -->
+
+       <!-- simple add calculator  -->
+    <!-- <input id="t1" placeholder="text 1"><br><br>
+        <input id="t2" placeholder="text 2"><br><br>
+        <button onclick="devtools()" type="button">Add</button>
+        <br>
+        <h4 id="op">Result = </h4> -->
+
+        <!-- timing function -->
+        <!-- <input id="inp" type="text" placeholder="your name"/><br><br>
+        <button onclick="start()" id="btnadd">start</button><br>
+         <h1 id="op">HI</h1> 
+        <img src="image.png" width="300"><br>
+        <button onclick="stop()" id="btnstop">stop</button> -->
+
+        <!-- fade in fade out using timing function -->
+        <!-- <button onclick="fadeout()" id="btnadd">fade out</button><br>
+        <img id="img1" src="image1.png" width="250"><br><br>
+        <button onclick="fadein()" id="btnstop">fade in</button> -->
+        
+        <!-- <input id="uname" placeholder="Enter your name" type="text"/><br><br> -->
+        <button id="btn1">append</button>
+        <button id="btn2">after</button>
+        <button id="btn3">prepend</button>
+        <button id="btn4">before</button>
+        <br><br>
+        <button id="btn5">Remove</button>
+        <button id="btn6" onclick="fn1()">Empty</button>
+        <div id="div1">
+            <p id="p1" class="p1cls" value="hello">1st div and <i>paragraph 1</i></p>
+            <p id="p2">1st div and paragraph 2</p>
+        </div>
+        <!-- <div id="div2">
+            <p>2nd div and paragraph 1</p>
+            <p>2nd div and paragraph 2</p>
+        </div> -->
+        <div id="div3">
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+            </ul>
+        </div>
+        <!-- <div id="cube">
+            <h4 id="ani">FIRE</h4>
+        </div> -->
+    </body>
+</html>

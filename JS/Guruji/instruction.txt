@@ -1,0 +1,4 @@
+Activate JSON server
+IN File path use cmd and type below code
+
+json-server --watch db.json --port 3004

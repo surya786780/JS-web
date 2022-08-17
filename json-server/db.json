@@ -1,0 +1,100 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "post": "1"
+    },
+    {
+      "post": "2",
+      "id": 2
+    },
+    {
+      "post": "3",
+      "id": 3
+    },
+    {
+      "post": "4",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "suryakumar",
+      "email": "suryakumar@gmail.com",
+      "address": "Erode"
+    },
+    {
+      "id": 2,
+      "name": "kumar",
+      "email": "kumar@sk.com",
+      "address": "Namakkal"
+    },
+    {
+      "id": 3,
+      "name": "surya",
+      "email": "surya@yahoo.com",
+      "address": "cauvery"
+    },
+    {
+      "id": 4,
+      "name": "sekar",
+      "email": "sekar@ai.com",
+      "address": "solasiramani"
+    },
+    {
+      "id": 5,
+      "name": "mugesh",
+      "email": "mugesh@fullstack.com",
+      "address": "kodumudi"
+    },
+    {
+      "name": "mugil",
+      "email": "mugil@yahoo.com",
+      "address": "madurai",
+      "id": 6
+    },
+    {
+      "name": "aakash",
+      "email": "aakash@123",
+      "address": "Chennai",
+      "id": 7
+    },
+    {
+      "name": "karthika",
+      "email": "sk@karthika.com",
+      "address": "aayakaatur",
+      "id": 8
+    },
+    {
+      "name": "karthika",
+      "email": "arjun",
+      "address": "surya",
+      "id": 9
+    },
+    {
+      "name": "s",
+      "email": "d",
+      "address": "f",
+      "id": 10
+    },
+    {
+      "name": "janani",
+      "email": "janani@surya.com",
+      "address": "ppm",
+      "id": 11
+    },
+    {
+      "name": "mallesh",
+      "email": "mallesh@surya.com",
+      "address": "chennai",
+      "id": 12
+    },
+    {
+      "name": "sk",
+      "email": "skkk",
+      "address": "skkkk",
+      "id": 13
+    }
+  ]
+}

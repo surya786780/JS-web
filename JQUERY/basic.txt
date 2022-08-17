@@ -1,0 +1,161 @@
+//  print anything in console
+// console.log ("hello world i am surya");
+// do any operations using document.write and thats print in webpage
+// document.write(10*4-4/4);
+// alert used to popup the window 
+// window.alert("dont close it");
+
+// statements & variables
+// var a,b,c;
+// a=5
+// b=4
+// c=1
+// z = a*b+c;
+// document.write("<br>value of the z is "+z+"<br>");
+// console.log(z-1);
+
+// let is also a variable but this is global not change in between the code
+// let a=10;
+// document.write(a);
+
+//  regular expressions are used to perform powerful 
+//  pattern-matching and search and replace function on text 
+/* function regexp(){
+   
+    var uname1=document.getElementById("uname").value;
+    // // we give text inside (/ /) (i) is case sensitive -Or-
+    // regx = new RegExp("rk" ,"i"); // use this too RegExp is the function
+    // var regx = /[sra]k/; // [] character set 
+    // var regx = /[a-s]k/i;   // easy way [a-s A-S 0-9] set range
+    //var regx = /[0-4]s[a-k]u[0-9]rya/; // use like this also
+    // var regx = /[^0ab]sk/; // anything we dont want use in first position
+    // var regx = /[^a-z]sk/; // range
+    // valid name or not 
+    // var regx = /[0-9]{10}/i; // {10} is a num of time repeated and more
+
+    /*  regular expressions special keywords
+        \d - match any digit (equal to [0-9])
+        \w - match any word character (a-z,A-Z,0-9 & _ )
+        \s - match whitespace characters (eg- spaces and tabs)
+        \t - match a tab only
+    
+    // -------------- for mobile num validation
+    //var regx = /^[6-9]\d{9}$/; // (^) before the num is nothing acceptable and ($) after 10 digit num nothing is acceptable
+ 
+    // ------------ for email validation 
+    let regx= /^([a-zA-Z0-9\.-]+)@([a-z A-Z 0-9 -]+)\.([a-z]{2,10})(\.[a-z]{2,8})?$/;
+    // surya@gmail.com  (or) surya@gmail.co.in
+    // [\. for accept (.) only,]+ <- '+' for not specify any length for the regx exp
+    // before the (?) is optional expression 
+    if(regx.test(uname1) && uname1 != "")
+    {
+        document.getElementById("lab1").innerHTML="Valid";
+        document.getElementById("lab1").style.visibility="visible";
+        document.getElementById("lab1").style.color="green";
+    }
+    else{
+        document.getElementById("lab1").innerHTML="InValid";
+        document.getElementById("lab1").style.visibility="visible";
+        document.getElementById("lab1").style.color="red";
+    }
+}*/
+
+// simple add calculator
+// function devtools(){
+//     let a = document.getElementById("t1").value;
+//     let b = document.getElementById("t2").value;
+//     // var c = parseInt(a)+parseInt(b);
+//     document.getElementById("op").innerHTML="Result = "+a+b;
+// }
+
+//---------- timing function -----------
+/*
+    1.setTimeout() allows you to execute statements ONCE after an interval
+    2.clearTimeout() method clears a timer set with the setTimeout() method
+    3.setInterval() allows you to execute statements REPEATEDLY after an interval
+    4.clearInterval() method clears a timer set with the setInterval() method
+*/
+
+// var id=0;
+// var sec = 0;
+// function printmsg(){
+//     var name = document.getElementById("inp").value;
+//     document.getElementById("op").innerHTML=sec +" Welcome "+name;
+//     sec++;
+//     if(sec>5){
+//         document.write("<h1>time is out</h1>");
+//         stop();
+//     }
+// }
+// function start(){
+//     // id=window.setTimeout(printmsg,4000); // function name , millisec(5000)=5sec
+//     id=window.setInterval(printmsg,1000);
+// }
+// function stop(){
+//     //window.clearTimeout(id); // id is unique for the start function so we use this id for clear the time
+//     window.clearInterval(id);
+// }
+
+// ------------ fade in fade out -------------
+// var opacity=0;
+// var intervalid=0;
+// var ids=0;
+// function hide(){
+//     var img = document.getElementById("img1");
+//     opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+//     if(ids==1 && opacity>0){
+//         opacity=opacity-0.1;
+//         img.style.opacity=opacity;
+//         console.log(opacity);
+//     }
+//     else if(ids==2 && opacity<1){
+//         opacity=opacity+0.1;
+//         img.style.opacity=opacity;
+//         console.log(opacity);
+//     }
+//     else{
+//         clearInterval(intervalid);
+//     }
+// }
+//     function fadeout(){
+//         ids=1;
+//         intervalid=window.setInterval(hide,500);
+//     }
+
+//  function fadein(){
+//      ids=2;
+//     intervalid=window.setInterval(hide,500);
+//  }
+
+
+// *******************   jquery tutorial   ****************
+
+// function fn1(){
+//          $("#heading1").fadeToggle(200); //$ is the jquery function call & fadetoggle is used to fadein fadeout in a 2000ms time interval
+//     }
+
+// jquery selector
+/*
+    jquery selectors allow tou to select and manipulate html elements().
+    jquery selectors are used to "find" (or select) html elements based on their
+        name, id, classes, types, attributes, values of attributes and much more.
+    its based on the existing css selectors, and in addition, it has some own 
+    custom selectors.
+*/
+// syntax of jquery selector is $("")
+// $("") // inside the "" we give --id or tags or class--
+// function fn1(){
+//     // $("h2").fadeToggle(200); //h2 is a tag we select all the h2 tag element to fadein
+//     // $("#heading1").fadeToggle(2000); // using id
+//     $(".myh1").fadeToggle(500); // using class
+// }
+
+// jquery events
+// $(document).ready(function(){
+//     $("button").click(function(){
+//         $(this).hide();
+//     });
+// });
+
+
+
