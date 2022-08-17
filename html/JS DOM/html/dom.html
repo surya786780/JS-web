@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="../css/dom.css" />
+    <script src="../js/dom.js"></script>
+    <script src="../jquery/jquery.js"></script>
+      <script>
+    // ---------- jquery enents -----------
+        // $(document).ready(function(){   // website is loaded after that jquery ready event is start execute 
+         // directly call the button is clicked but not using onclick() button event
+            // $("#btn1").click(fn1);     // id haved button only clicked event call that id button
+            // $("button").click(fn1); // all the button is clicked event call
+            // $("button").dblclick(fn1); // double click
+        //     $("#btn1").mouseenter(fn1); // mouse is overedin button event is called
+            // $("#btn1").mouseleave(fn2); // mouse is leaved button event is called
+        //     $("#btn2").hover(fn1,fn2); // hover = mouseenter,mouseleave
+        
+        //     function fn1(){
+        //     // $("li").fadeToggle(); 
+        //     $("li").fadeOut();
+        //         }
+        //     function fn2(){
+        //     $("li").fadeIn(); //
+        // }
+
+        // focus() and blur()
+            //    $("input").focus(function(){  // event focus the test box below code exe
+            //         $(this).css("background-color", "yellow",borderColor)
+            //     }); //
+            //     $("input").blur(function(){       // blur is event loses focus after exec
+            //         $(this).css("background-color", "white")
+            //     }); 
+        
+        // select multiple events using on() event
+        // hide the elements using hide effect, show the elements using show effect  
+        // $("#btn1").click(function(){  // if click the p tag elementsn that going to hide
+        //         // $("p").hide();
+        //         $("p").slideUp();
+
+        //     });
+        // $("#btn2").click(function(){  // if click the p tag elementsn that going to hide
+        //         // $("p").show();
+        //         $("p").slideDown();
+        //     });
+        // $("#btn3").click(function(){  // if click the p tag elementsn that going to hide
+        //         // $("p").toggle();
+        //         $("p").slideToggle();
+        //     });
+
+        // use multiple events using on() 
+        // $("button").on({
+        //     // click:function(){
+        //     mouseenter:function(){
+        //         $(this).css("background-color", "orange")
+        //     },
+        //     // dblclick:function(){
+        //     mouseleave:function(){
+        //         $(this).css("background-color", "white")
+        //         // $(this).css("background-color", "green")
+        //     }
+        // });
+
+        // js dom in jquery
+        // add class, remove class
+            // $("#btn1").click(function(){
+            //     $("#fdiv").addClass("newclass newcls");
+            // });
+            // $("#btn2").click(function(){
+            //     $("#fdiv").removeClass("newclass");
+            // });
+            // $("#btn3").click(function(){
+            //     $("#fdiv").toggleClass("newcls");
+            // });
+            // $("#btn4").click(function(){
+            //     $("#fdiv").css("font-size","44px");
+            // });
+        
+        // js dom 
+        $("#btn1").click(function(){
+            $("#fdiv").append("append");
+        }); 
+        $("#btn2").click(function(){
+            $("#fdiv").after("after append");
+        });
+        $("#btn3").click(function(){
+            $("#fdiv").prepend("prepend");
+        });
+        $("#btn4").click(function(){
+            $("#fdiv").before("before append");
+        });
+        $("#btn5").click(function(){
+            // $("#fdiv").remove();
+            $("#p1,#p2").remove();
+        });
+        $("#btn6").click(function(){
+            $("#fdiv").empty();
+        });
+    // });
+    </script> 
+</head>
+<body>
+    <!-- <input id="inp" placeholder="user name"><br><br>
+    <input id="pass" type="password" placeholder="password"><br><br>
+    <button onclick="uandp()" id="but1">Submit</button> -->
+    
+    <!-- <h4>Department</h4>
+    <input id='1' name="one" type="radio" value="CSE">CSE</input>
+    <input id='2' name="one" type="radio" value="ECE">ECE</input>
+    <input id='3' name="one" type="radio" value="EEE">EEE</input><br>
+    <button onclick="rad()">Submit</button> -->
+
+    <!-- <select id="selectbox">
+        <option id='1' value="CSE">CSE</option>
+        <option id='2' value="ECE">ECE</option>
+        <option id='3' value="EEE">EEE</option>
+    </select>
+    <br><button onclick="sel()">click here</button> -->
+
+    <!-- get element by tag name -->
+    <!-- <p>I am surya</p>
+    <p>From pallipalayam</p>
+    <p>ksrit - Diploma</p>
+    <p>ksrce - B.E</p>
+    <button onclick="changestyle()">click</button> -->
+
+    <!-- get element by class name -->
+    <!-- <p class="details">I am surya</p>
+    <p>From pallipalayam</p>
+    <p class="details">ksrit - Diploma</p>
+    <p>ksrce - B.E</p>
+    <button onclick="clsname()">click</button> -->
+
+    <!-- mouseover & mouseout on images -->
+    <!-- <img id="img1" onmouseover="newimg()" onmouseout="oldimg()" src="croissant.jpg" width="400px" height="400px"> -->
+    
+    <!-- form validation -->
+    <!-- <form onsubmit="return formval()" action="home.html">
+        <input id="name" type="text" placeholder="user name"><br>
+        <label id="lbu" style="color: red;visibility: hidden">Invalid UserName</label><br>
+        <input id="pass" type="password" placeholder="password">
+        <label id="lbp" style="color: red;visibility: hidden">Invalid PassWord</label><br>
+        <label id="lbp2" style="color: red;visibility: hidden">PassWord week</label>
+         equired is html5 element used for non registered boxes shows error
+        <br>
+        <button type="submit">Register</button>
+    </form> -->
+
+    <!-- regular expressions are used to perform powerful pattern-matching and search and replace function on text -->
+    <!-- <form onclick="regexp()" action="home.html" > -->
+        <!-- <input id="uname" placeholder="user name" type="text"/><br>
+        <label id="lab1" style="color: brown;visibility: hidden;">Invalid username</label><br>
+        <button onclick="regexp()" type="button">Submit</button> -->
+    <!-- </form> -->
+
+       <!-- simple add calculator  -->
+    <!-- <input id="t1" placeholder="text 1"><br><br>
+        <input id="t2" placeholder="text 2"><br><br>
+        <button onclick="devtools()" type="button">Add</button>
+        <br>
+        <h4 id="op">Result = </h4> -->
+
+        <!-- timing function -->
+        <!-- <input id="inp" type="text" placeholder="your name"/><br><br>
+        <button onclick="start()" id="btnadd">start</button><br>
+         <h1 id="op">HI</h1> 
+        <img src="image.png" width="300"><br>
+        <button onclick="stop()" id="btnstop">stop</button> -->
+
+        <!-- fade in fade out using timing function -->
+        <!-- <button onclick="fadeout()" id="btnadd">fade out</button><br>
+        <img id="img1" src="image1.png" width="250"><br><br>
+        <button onclick="fadein()" id="btnstop">fade in</button> -->
+
+        <!-- zoom in zoom out -->
+        <!-- <img src="image1.png" onmouseover="timer()" onmouseout="timeout()" id="img1" width="100px"/> -->
+    
+
+        <!-- JQUERY -->
+        <!-- <h2 id="h22" class="c1">welcome</h2> -->
+        <!-- <input id="i1" placeholder="uname" type="text"/><br><br>
+        <input id="i2" placeholder="email" type="text"/><br><br> -->
+        <button id="btn1">append</button>
+        <button id="btn2" onclick="fn1()">after</button>
+        <button id="btn3">prepend</button>
+        <button id="btn4">before</button><br><br>
+        <button id="btn5">remove</button>
+        <button id="btn6">empty</button><br><br>
+
+        <div id="fdiv" class="mydiv">
+            <p id="p1"> first div 1st paragraph</p>
+            <p id="p2"> first div 2nd paragraph</p>
+        </div>
+        <!-- <div id="sdiv" class="mydiv">
+            <p> sec div 3rd paragraph</p>
+        </div>
+        <div id="tdiv" class="mydiv">
+            <ul>
+                <li>item 0</li>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </div> -->
+
+        <br>
+    </body>
+</html> 

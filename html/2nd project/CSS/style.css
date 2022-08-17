@@ -1,0 +1,179 @@
+body{
+	background-color: beige;
+	color: black;
+	font-family: sans-serif;
+	font-size: 12px;	
+	font-weight: bolder;
+	/*same as above*/
+	font: bold 12px sans-serif;
+	line-height: 1.6em;
+	margin: 1; 
+}
+.container{
+	width: 80%;
+	margin: auto;
+	padding-left: 10px;
+}
+.clr{
+	clear: both;
+}
+a{
+	color: orange;
+	text-decoration: none;
+}
+a:hover{
+	color: black;
+}
+a:active{
+	color: pink;
+}
+/*a:visited{
+	color :orange;}*/
+.button{
+	margin-left: 5px;
+	padding: 10px 10px;
+	color: blueviolet;
+	border: none;
+	background-color: lavender;
+}
+.button:hover{
+	color: orange;
+	background-color: white;
+}
+.box-1{
+	color: inherit;
+	background-color: white;
+	border: 10px yellow dashed;
+	border-width: 4px;
+	/* same as above
+	border-right: 5px yellow solid;
+	border-left: 5px yellow solid;
+	border-top: 5px yellow solid;
+	border-bottom: 5px yellow solid;*/
+	padding-left: 10px;
+	padding: 20px;
+	margin-top: 10px;
+	margin: 10px 0;/* 0 for left and right margin*/
+}
+.box-1 h1{
+	font-family: serif;
+	font-weight: 800;
+	font-style: italic;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	word-spacing: 0.5em;
+
+}
+.box-2{
+	background-color: white;
+	border: 10px lavender dashed;
+	border-width: 4px;
+	margin: 10px 0;
+	padding: 20px;
+
+}
+.categories{
+	border: 4px solid black;
+	border-radius: 4px;
+	margin: 10px 0;
+	padding: 0 10px;
+}
+.categories h2{
+	font-family: serif;
+	font-weight: 800;
+	text-decoration: underline;
+	letter-spacing: 0.1em;
+	word-spacing: 0.5em;
+}
+.categories ul{
+	padding:0 5px;
+	list-style: square;
+}
+.categories li{
+	border-bottom: dashed 1px black;
+}
+.my-form{
+	padding: 10px;
+}
+.my-form .form-group{
+	padding: 5px;
+}
+.my-form label{
+	color: brown;
+	display: block;
+} 
+.my-form input[type="text"], .my-form textarea{
+	background-color: white;
+	padding: 2px;
+	width:50%;
+}
+
+.blocks{
+	float: left;
+	width: 33.3%;
+	border: 1px solid brown;
+	padding: 10px;
+	box-sizing: border-box;
+}
+#mainbar{
+	float: left;
+	width: 70%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#sidebar{
+	margin-top: 5px;
+	background-color: black;
+	color: white;
+	float: right;
+	width: 30%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.plain-box{
+	width: 800px;
+	height: 500px;
+	border: 2px solid black;
+	margin-top: 20px;
+	position: relative;
+	background-image: url('../images/image1.jpg');
+	background-repeat: no-repeat;
+	background-position: 100px 200px;
+	background-position:center top;
+}
+.plain-box h1{
+	position: absolute;
+	margin-top: 44px;
+	margin-left: 150px;
+}
+.plain-box h2{
+	position: absolute;
+	margin-top: 400px;
+	margin-left: 200px;
+}
+.fix-me{
+	position: fixed;
+	top: 400px;
+}
+.my-list li:nth-child(odd){
+	background-color: rgb(112, 219, 183);
+}
+.my-list li:nth-child(even){
+	background-color: aquamarine;
+}
+@media(max-width:600px){
+	#mainbar{
+		width: 100%;
+		float: none;
+	}
+	#sidebar{
+		width: 100%;
+		float: none;
+	}
+	.plain-box{
+		width: 100%;
+		float: none;
+	}
+}

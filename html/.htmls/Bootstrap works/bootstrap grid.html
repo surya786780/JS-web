@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOT 1</title>
+
+    <link rel="stylesheet" href="BOOTSTRAP/assets/css/bootstrap.min.css" />
+
+    <style>
+      body{
+        background-color: rgb(150, 59, 236);
+        padding-bottom: 100px;
+       }
+
+/* div{
+    border: 1px solid rgb(245, 243, 243);
+} */
+.gridcon .grid1 div{
+    /* margin:10px; */
+    background-color:rgb(85, 151, 236);
+    border: 1px solid rgb(171, 196, 216);
+}
+.gridcon {
+    background-color:rgb(151, 190, 240);
+    border: 2px solid red;
+}
+.gridcon{
+    min-height: 500px;
+}
+    </style>
+  </head>
+  <body>
+    <!-- container takes left and right sides some padding , container-fluid takes 100% width -->
+    <!-- md - apply container for medium devices , lg - large devices-->
+    <div class="container text-center">
+      <h1>BOOTSTRAP stUdy course</h1>
+      <p>
+        Containers takes left and right side some width so its for ux - user
+        xperience
+      </p>
+    </div>
+
+    <!-- Bootstrap Grid (12 column in defult & max col  12)-->
+    <!-- Layout -->
+    <div class="container gridcon ">
+      <!-- <h2>Bootstrap Grid</h2>
+      <h4>Basic Layout</h4> -->
+      <!-- row -->
+      <!-- <div class="row grid1">
+        <div class="col">Row 1 Col 1</div>
+        <div class="col">Row 1 Col 2</div>
+        <div class="col">Row 1 Col 3</div>
+        <div class="col">Row 1 Col 4</div>
+      </div>
+      <div class="row grid1">
+        <div class="col-2">Row 2 Col 1</div>
+        <div class="col">Row 2 Col 2</div>
+        <div class="col">Row 2 Col 3</div>
+        <div class="col-2">Row 2 Col 4</div> -->
+        <!-- <div class="col-2">Row 2 Col 5</div>
+                <div class="col-2">Row 2 Col 6</div> -->
+      <!-- </div>
+      <div class="row grid1"> -->
+        <!-- sm- small screen, md-medium screen is a responsive for device size -->
+        <!-- <div class="col-sm-4">Col 1 responsive</div>
+        <div class="col-sm-5">Col 2 responsive</div>
+        <div class="col-sm-3">Col 3 responsive</div>
+      </div>
+      <div class="row grid1"> -->
+        <!-- sm, md is a responsive for device size -->
+        <!-- <div class="col-md">Col 1 responsive</div>
+        <div class="col-md col-sm-6">Col 2 Email</div>
+        <div class="col-md col-sm-6">Col 3 Phone</div>
+      </div> -->
+
+      <!-- Practice -->
+      <!-- HEAD -->
+      <div class="row grid1 align-items-center justify-content-between">
+        <div class="col-sm-2">logo</div>
+        <div class="col-sm">
+          <ul  style="list-style:none;">
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+          </ul>
+        </div>
+        <div class="col-sm-2"><button>Login now</button></div>
+      </div>
+
+      <!-- BODY CONTENT -->
+      <div class="row grid1" style="height:300px;">
+          <div class="col-sm-3"><h4>Left sidebar</h4><br>
+            <ul style="list-style: none; align-items: right;">
+                <li>Welcome</li>
+                <li>home</li>
+            </ul>
+        </div>
+          <div class="col-sm">Main content<br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Cumque sit, quasi corporis nisi rem ducimus debitis quos? Necessitatibus nesciunt,
+         ab, est molestias consequatur cum laborum similique deleniti dolor dolore minus.
+        <!-- <div class="row">
+            <div class="col-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cumque sit, </div>
+            <div class="col-sm">quasi corporis nisi rem ducimus debitis quos? Necessitatibus nesciunt,
+                ab, est molestias consequatur cum laborum similique deleniti dolor dolore minus.</div>
+        </div> -->
+        </div>
+        
+      </div>
+
+      <!-- footer -->
+      <div class="row grid1">
+        <div class="col ">Footer Info</div>
+    </div>
+
+    <!-- <div class="row grid1 justify-content-between align-items-end "style= "height:150px">
+        <div class="col-sm-3">col 1</div>
+        <div class="col-sm-3 offset-3">col 2</div>
+        <div class="col-sm-3">col 3</div>
+    </div> -->
+    </div>
+    <!-- End layout -->
+
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,116 @@
+body{
+    background-color: black; 
+    width:100%;
+    font-family:Quicksand;
+    
+}
+
+.home h1{
+    margin-top: 3px;
+    color: white;
+    float:left;
+}
+#li1 {   
+    color:white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
+    /* position: relative; */
+    float: right;
+    list-style: none;
+    /* margin-right: 60px;  */
+}
+#li2 {   
+    color:white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
+    /* position: relative; */
+    float: right;
+    list-style: none;
+    /* margin-right: 30px;  */
+}
+#li3 {   
+    color:white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 10px;
+    /* position: relative; */
+    float: right;
+    list-style: none;
+    /* margin-left: 300px;  */
+}
+.home >ul{
+    margin-right: 550px;
+}
+.home .button{
+    margin-top: 9px;
+    margin-right: 20px;
+    padding:8px 15px;
+    background-color: rgb(238, 241, 23);
+    color:black;
+    border: 10px;
+    border-radius:5px;
+    float:right;
+    
+}
+.clr{
+	clear: both;
+}
+
+.body h1{
+    margin-top: 100px;
+    text-align: center;
+    color:rgb(238, 241, 23);
+}
+
+
+.body h4{
+    text-align: center;
+    color:gray;
+}
+.body h5{
+    text-align: center;
+    color:gray;
+}
+.one input[type="text"]{
+    width:16%;
+    margin-left: 250px;
+    margin-top: 9px;
+    margin-right: 20px;
+    padding:8px 15px;
+    border-style: none;
+    border-radius:5px;
+}
+.one input[type="submit"]{
+    width:18%;
+    margin-left: 250px;
+    margin-top: 9px;
+    margin-right: 20px;
+    padding:8px 15px;
+    border-style: none;
+    border-radius: 8px;
+}
+
+.body .button{
+    background-color: rgb(238, 241, 23);
+    color:black;
+    border-radius:8px;
+    text-align: left;
+    
+}
+.footer h5{
+    padding-top :45px;
+    padding-left: 15px;
+    color:gray;
+    float:left;
+}
+.footer h6{
+    padding-top :45px;
+    padding-right: 25px;
+    color:gray;
+    float:right;
+}
